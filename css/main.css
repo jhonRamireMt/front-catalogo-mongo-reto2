@@ -1,0 +1,22 @@
+.bg{
+    background-image: url(../img/bg-sarten2.jpg);
+    background-position: center center;
+}
+body{
+    background: #ffe259;
+    background: linear-gradient(to right,#ffa751,#ffe259);
+}
+.alerta-msg-red{
+    color: red;
+    margin-bottom: 10px;
+}
+ 
+.alerta-msg-green {
+   color:green;
+   margin-bottom: 10px;
+}
+
+#nombreUser, #sesion, #text-titulo-col{
+    color:white;
+
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Ingreso</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/main.css">
+  
+  
+</head>
+
+<body>
+  <!-- header -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success mb-5 ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html"><img src="img/sarten-128.png" width="48px" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarNav">
+        <ul class="navbar-nav">
+          
+          <li class="nav-item ">
+            <a class="nav-link" href="#">Tienda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pedidos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contáctanos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Ingreso</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./registro.html">Registro</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="container w-75 bg-warning mt-5 rounded shadow">
+    <div class="row align-items-stretch" >
+      <div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded">
+      </div>
+      <div class="col bg-white p-5 rounded-end">
+        <div class="text-end">
+          <img src="img/sarten-128.png" width="48px" alt="">
+        </div>
+        <!-- formulario de inicio -->
+        
+        <h2 class="fw:bold text-center py-5">Recuperar Contraseña</h2>
+      <div class="mb-4">
+        <label for="email" class="form-label">Verificar tu email: </label>
+        <input type="email" class="form-control" name="email" id="recovery-email" required>
+      </div>
+             
+      <div class="d-grid">
+        <button onclick="recuperarContraseña()" class="btn btn-primary"> Enviar </button>
+      </div>
+      <div class="my-3">
+        <span> Ya tienes una Cuenta? <a href="./index.html">Iniciar Sesion</a></span><br>
+      </div>
+
+
+
+
+  <!-- footer -->
+  <div class="container mt-5">
+    <div class="col">
+      <div class="row">
+        &copy; Con La Sarten Por El Mango - 2021
+      </div>
+    </div>
+  </div>
+
+  <!-- javascript -->
+  <script  type="text/javascript" src="./js/registro.js"></script>
+
+</body>
+
+</html>
