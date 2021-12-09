@@ -246,11 +246,12 @@ function editarRegistro(e) {
         name: $("#editNombre").val(),
         address: $("#editDir").val(),
         cellPhone: $("#editTel").val(),
-        email: emailForm,
+        email: $("#editCorreo").val(),
         password: $("#editPassword1").val(),
         zone: $("#editZona").val(),
         type: $("#editRol").val(),
       };
+
       console.log(myData);
       let dataToSend = JSON.stringify(myData);
       $.ajax({
@@ -267,6 +268,9 @@ function editarRegistro(e) {
           }
           setTimeout(retrasarCarga, 2000);
         },
+        error: function(){
+          alertify.error("DEBES CAMBIAR EL CORREO !");
+        }
       });
     }
   });
